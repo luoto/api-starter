@@ -5,6 +5,8 @@ var config;
 
 if (process.env.NODE_ENV === 'test') {
   config = {
+    port: 8080,
+    host: 'localhost',
     db: {
       host: 'localhost',
       name: 'users',
@@ -24,6 +26,8 @@ if (process.env.NODE_ENV === 'test') {
 
 if (process.env.NODE_ENV === 'dev') {
   config = {
+    port: 3000,
+    host: 'localhost',
     db: {
       host: 'localhost',
       name: 'test0001',
@@ -43,6 +47,8 @@ if (process.env.NODE_ENV === 'dev') {
 
 if (process.env.NODE_ENV === 'prod') {
   config = {
+    port: 80,
+    host: 'localhost',
     db: {
       host: 'localhost',
       name: 'users',

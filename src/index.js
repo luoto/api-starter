@@ -1,3 +1,4 @@
+var config = require('./api/config');
 var server = require('./api/server');
 
-server.listen(3000, 'localhost');
+server.listen(config.port, config.host);
