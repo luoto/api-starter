@@ -3,7 +3,7 @@ var config = require('../config');
 
 module.exports = function(payload) {
   var options = {
-    expiresInMinutes: config.token.expiration,
+    expiresIn: config.token.expiration,
     issuer: config.token.issuer
   };
 

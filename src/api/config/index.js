@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'test') {
     salt: 10,
     token: {
       secret: 'THE_SECRET',
-      expiration: 60 * 24 * 7, // in minutes
+      expiration: 60 * 60 * 24 * 7, // in seconds
       issuer: 'https://mydomain.com'
     },
     logging: false, // morgan
@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === 'dev') {
     salt: 10,
     token: {
       secret: 'THE_SECRET',
-      expiration: 60 * 24 * 7, // in minutes
+      expiration: 60 * 60 * 24 * 7, // in seconds
       issuer: 'https://mydomain.com'
     },
     logging: true, // morgan
@@ -58,7 +58,7 @@ if (process.env.NODE_ENV === 'prod') {
     salt: 10,
     token: {
       secret: 'THE_SECRET',
-      expiration: 60 * 24 * 7, // in minutes
+      expiration: 60 * 60 * 24 * 7, // in seconds
       issuer: 'https://mydomain.com'
     },
     logging: true, // morgan
