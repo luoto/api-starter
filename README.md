@@ -1,4 +1,4 @@
-# API Starter
+# API Starter [![Build Status](https://travis-ci.org/luoto/api-starter.svg?branch=master)](https://travis-ci.org/luoto/api-starter)
 Contains the necessary foundation to have a RESTful API service ready to go. Complete with token based user authentication.
 
 [Expresss, Mongoose, MongoDB]
